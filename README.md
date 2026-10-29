@@ -4,6 +4,8 @@
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node.js-20%2B-339933.svg)](https://nodejs.org/)
 
+![CursorWitness CLI workflow](assets/cli-workflow.svg)
+
 The offline executable for [CursorWitness](https://github.com/CursorWitness).
 
 The CLI turns deterministic fixtures, consumer adapters, fault plans, and independent assertions into a repeatable developer workflow. It owns argument parsing, filesystem boundaries, presentation, and exit-code behavior; the correctness model remains in [`cursorwitness-core`](https://github.com/CursorWitness/cursorwitness-core).

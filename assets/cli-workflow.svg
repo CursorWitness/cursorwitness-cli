@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">CursorWitness CLI workflow</title>
+  <desc id="desc">Fixtures, scenarios, and adapters are executed by the offline CLI to produce a human-readable or JSON report and an actionable exit status.</desc>
+  <rect width="1200" height="360" rx="24" fill="#0d1117"/>
+  <text x="60" y="58" fill="#f0f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">CursorWitness CLI workflow</text>
+  <text x="60" y="88" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="16">One offline command, two report surfaces, one evidence boundary</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" text-anchor="middle">
+    <rect x="75" y="145" width="245" height="92" rx="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/><text x="197" y="180" fill="#f0f6fc">fixtures + scenario</text><text x="197" y="207" fill="#8b949e" font-size="14">versioned inputs</text>
+    <rect x="385" y="145" width="245" height="92" rx="14" fill="#161b22" stroke="#3fb950" stroke-width="2"/><text x="507" y="180" fill="#f0f6fc">cursorwitness run</text><text x="507" y="207" fill="#8b949e" font-size="14">offline execution</text>
+    <rect x="695" y="145" width="190" height="92" rx="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/><text x="790" y="180" fill="#f0f6fc">report</text><text x="790" y="207" fill="#8b949e" font-size="14">human or JSON</text>
+    <rect x="950" y="145" width="175" height="92" rx="14" fill="#161b22" stroke="#f0883e" stroke-width="2"/><text x="1037" y="180" fill="#f0f6fc">exit status</text><text x="1037" y="207" fill="#8b949e" font-size="14">actionable result</text>
+  </g>
+  <g stroke="#8b949e" stroke-width="2" fill="none"><path d="M320 191h65m245 0h65m190 0h65"/><path d="m375 185 10 6-10 6m310-6 10 6-10 6m255-6 10 6-10 6"/></g>
+  <text x="75" y="300" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="15">Deterministic semantic reports exclude runtime paths and timestamps</text>
+</svg>
