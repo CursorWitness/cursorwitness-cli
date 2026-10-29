@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "scenario.v1",
+  "scenarioId": "basic-cli-pagination",
+  "expectedEventIds": ["event-1"],
+  "fixture": {
+    "schemaVersion": "fixture.v1",
+    "id": "basic-cli-fixture",
+    "rpcMethod": "getEvents",
+    "provenance": "synthetic",
+    "pages": [
+      {
+        "requestKey": "initial",
+        "response": {
+          "events": [],
+          "oldestLedger": 100,
+          "latestLedger": 101,
+          "cursor": "opaque-next"
+        }
+      },
+      {
+        "requestKey": "opaque-next",
+        "response": {
+          "events": [
+            {
+              "id": "event-1",
+              "type": "contract",
+              "ledger": 101,
+              "topic": ["topic"],
+              "value": "value"
+            }
+          ],
+          "oldestLedger": 100,
+          "latestLedger": 101
+        }
+      }
+    ]
+  }
+}
