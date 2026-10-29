@@ -1,10 +1,10 @@
 # CursorWitness CLI
 
+![CursorWitness CLI](assets/cli-hero.svg)
+
 [![CI](https://github.com/CursorWitness/cursorwitness-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/CursorWitness/cursorwitness-cli/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node.js-20%2B-339933.svg)](https://nodejs.org/)
-
-![CursorWitness CLI workflow](assets/cli-workflow.svg)
 
 The offline executable for [CursorWitness](https://github.com/CursorWitness).
 
@@ -71,6 +71,10 @@ This repository is an implementation seam for the CursorWitness v0.1.0 developme
 
 - [`cursorwitness-core`](https://github.com/CursorWitness/cursorwitness-core) — contracts, fixtures, oracle, and report model
 - [`cursorwitness-adapters`](https://github.com/CursorWitness/cursorwitness-adapters) — consumer-specific integration seams
+
+## Visual guide
+
+![CursorWitness CLI workflow](assets/cli-workflow.svg)
 
 ## License
 
