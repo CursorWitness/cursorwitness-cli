@@ -5,12 +5,15 @@
 [![CI](https://github.com/CursorWitness/cursorwitness-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/CursorWitness/cursorwitness-cli/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node.js-20%2B-339933.svg)](https://nodejs.org/)
+[![Status: development](https://img.shields.io/badge/status-development-orange.svg)](#project-status)
 
 The offline executable for [CursorWitness](https://github.com/CursorWitness).
 
 The CLI turns deterministic fixtures, consumer adapters, fault plans, and independent assertions into a repeatable developer workflow. It owns argument parsing, filesystem boundaries, presentation, and exit-code behavior; the correctness model remains in [`cursorwitness-core`](https://github.com/CursorWitness/cursorwitness-core).
 
 ## Repository role
+
+The CLI owns offline execution and reproducible report presentation:
 
 ```text
 fixture + scenario + adapter
@@ -62,6 +65,8 @@ Duplicate delivery is not automatically a failure. The CLI distinguishes it from
 - [`test/`](test/) — CLI contract and filesystem-boundary tests
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution workflow
 - [`SECURITY.md`](SECURITY.md) — security boundaries and reporting
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — community standards
+- [`CHANGELOG.md`](CHANGELOG.md) — release and change history
 
 ## Project status
 
@@ -79,3 +84,5 @@ This repository is an implementation seam for the CursorWitness v0.1.0 developme
 ## License
 
 Apache-2.0. See [`LICENSE`](LICENSE).
+
+See also: [`CONTRIBUTING.md`](CONTRIBUTING.md) · [`SECURITY.md`](SECURITY.md) · [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) · [`CHANGELOG.md`](CHANGELOG.md)
