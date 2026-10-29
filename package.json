@@ -16,7 +16,7 @@
     "verify": "pnpm run typecheck && pnpm test && pnpm run package:check"
   },
   "dependencies": {
-    "@cursorwitness/core": "git+https://github.com/CursorWitness/cursorwitness-core.git#6648be3"
+    "@cursorwitness/core": "git+https://github.com/CursorWitness/cursorwitness-core.git#fba74b3"
   },
   "devDependencies": {
     "@types/node": "^24.8.0",
