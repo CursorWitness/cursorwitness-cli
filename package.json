@@ -11,15 +11,16 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "test": "tsx --test test/*.test.ts",
     "package:check": "pnpm run build && node scripts/verify-package.mjs",
     "verify": "pnpm run typecheck && pnpm test && pnpm run package:check"
   },
   "dependencies": {
-    "@cursorwitness/core": "git+https://github.com/CursorWitness/cursorwitness-core.git#cdd78a9"
+    "@cursorwitness/core": "git+https://github.com/CursorWitness/cursorwitness-core.git#6648be3"
   },
   "devDependencies": {
     "@types/node": "^24.8.0",
+    "tsx": "4.19.3",
     "typescript": "^5.9.2"
   }
 }

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { resolve } from "node:path";
 import { exitCodeForReport, parseCliArguments, parseScenarioConfig, resolveSafeOutputPath } from "../src/cli-config.ts";
 
 test("parses the offline run command and help/version controls", () => {
@@ -31,7 +32,8 @@ test("validates scenario.v1 input and rejects unsupported shapes", () => {
 });
 
 test("resolves output safely without overwriting the config", () => {
-  assert.equal(resolveSafeOutputPath("reports/report.json", "scenario.json", "C:\\workspace"), "C:\\workspace\\reports\\report.json");
+  const cwd = process.cwd();
+  assert.equal(resolveSafeOutputPath("reports/report.json", "scenario.json", cwd), resolve(cwd, "reports", "report.json"));
   assert.throws(() => resolveSafeOutputPath("scenario.json", "scenario.json", "C:\\workspace"), /overwrite/);
   assert.equal(exitCodeForReport("pass"), 0);
   assert.equal(exitCodeForReport("fail"), 1);
